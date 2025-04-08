@@ -101,17 +101,16 @@ Los usuarios reportan fallos intermitentes en la pasarela de pagos de **NEU**, s
 ### 🧠 Estrategia para Aislar la Causa
 
 1. Usar herramientas de monitoreo para detectar picos de error.
-2. Implementar logs detallados en cada paso del flujo.
-3. Validar si hay errores silenciosos en el backend.
-4. Consultar con el proveedor de pagos por fallos o límites superados.
+2. Validar si hay errores silenciosos en el backend.
+3. Consultar con el proveedor de pagos por fallos o límites superados.
 
 ---
 
 ### 💡 Sugerencias para Solucionarlo
 
 - Implementar sistema de **manejo global de errores**.
-- Agregar **logs detallados** (hora, paso fallido, usuario, IP, etc.).
-- Usar **herramientas de monitoreo** (Ej: Sentry, Datadog, Grafana).
+- Agregar **mensajes especificos** (hora, paso fallido, usuario, IP, etc.).
+- Usar **herramientas de monitoreo**.
 - Habilitar **mensajes temporales** de error para el usuario.
 - Implementar **reintentos automáticos** para errores con APIs externas.
 
